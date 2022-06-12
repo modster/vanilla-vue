@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+    <meta charset='UTF-8' />
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+
+    <title>Document</title>
+
+    <link rel='icon' type='image/png' href='data:image/png;base64,iVBORw0KGgo='>
+
+    <!-- add this: -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <link href='style.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+    <!-- then this: -->
+    <div id="app">{{ message }}</div>
+
+    <script>
+
+        // then this:
+        const { createApp } = Vue
+
+        createApp({
+
+            data()
+
+            {
+
+                return {
+
+                    message: 'Hello Vue!'
+
+                }
+
+            }
+
+        }).mount('#app')
+
+    </script>
+
+</body>
+
+</html>
